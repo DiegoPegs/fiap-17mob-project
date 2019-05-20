@@ -5,10 +5,6 @@ var app = {
         
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
 
-        document.getElementById('btnCadastrar').addEventListener('click', ()=>{
-            window.location = 'cadastro.html'
-        })
-
         document.getElementById('btnEntrar').addEventListener('click', ()=>{
             let email = document.getElementById('email').value;
             let password = document.getElementById('password').value;

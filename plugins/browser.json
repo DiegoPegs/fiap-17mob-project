@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.fiap.diego"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.fiap.diego"
     }
   },
   "dependent_plugins": {}
