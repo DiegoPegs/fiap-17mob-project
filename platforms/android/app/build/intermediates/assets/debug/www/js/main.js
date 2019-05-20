@@ -1,31 +1,39 @@
 var main = {
     onStart : () => { },
     initialize: function(){
-
+        var page = window.location.href
         this.initializeFirebase();
-        if (window.location.href.indexOf('index') !== -1) {
-            firebase.auth().onAuthStateChanged((user) => {
-                if (user) {
-                    this.userLoged = user;
-    
-                    this.localUser = {
-                        email: user.email,
-                        uid: user.uid,
-                        displayName: user.displayName,
-                        photoUrl: user.photoURL
-                    };
-    
-                    console.log(`LocalUser: ${this.localUser}`);
-                    window.location = 'home.html';
-                                   
-                    
-                } else {
-                    console.log('nao deu pra fazer login')
+        firebase.auth().onAuthStateChanged((user) => {
+            if (user) {
+                this.userLoged = user;
+
+                this.localUser = {
+                    email: user.email,
+                    uid: user.uid,
+                    displayName: user.displayName,
+                    photoUrl: user.photoURL
+                };
+
+                console.log(`LocalUser: ${this.localUser}`);
+                if (page.indexOf('index') !== -1) {
+                    window.location = 'home.html';            
                 }
-                this.onStart();
-            });
-            
-        }
+
+                if (page.indexOf('perfil') !== -1) {
+                    document.getElementById('nome').textContent = this.localUser.displayName
+                    document.getElementById('email').textContent = this.localUser.email
+                }
+                               
+                
+            } else {
+                if (page.indexOf('cadastro') == -1 && page.indexOf('index') == -1) {
+                    window.location = 'index.html';            
+                }
+                console.log('nao deu pra fazer login')
+            }
+            this.onStart();
+        });
+        
     },
     userLoged: {},
     

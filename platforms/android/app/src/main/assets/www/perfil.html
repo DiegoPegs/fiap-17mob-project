@@ -1,47 +1,61 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://www.gstatic.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <title>Perfil</title>
-    </head>
-    <body>
-        <div class="conteiner">
-            <div class="row col s12">
-                <h1>Perfil</h1>
+
+<head>
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://www.gstatic.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <title>Perfil</title>
+</head>
+
+<body>
+    <div class="conteiner-fluid">
+        <div class="row col s12">
+            <h1>Perfil</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <img src="#" id="fotoPerfil" style="width: 100%; height: auto;" />
             </div>
-            <div class="row col s12">
-                <img src="#" id="fotoPerfil"  style="width: 100%; height: auto;"/>
-                <div class="col s12">
-                    <button type="button" class="btn btn-primary btn-block" id="camera">Câmera</button>
-                </div>
-                    
-                <div class="col-12 mt-3">
-                    <button type="button" class="btn btn-primary btn-block" id="gallery">Galeria</button>
-                </div>
-            
-                <p id="nome"></p>
-                <p id="email"></p>
+            <div class="col-sm-12">
+                <button type="button" class="btn btn-primary btn-block" id="camera">Câmera</button>
             </div>
 
-            <div>
-                <input type="button" value="Perfil" id="btnPerfil">
-                <input type="button" value="Voltar" id="btnVoltar">
-                
+            <div class="col-sm-12">
+                <button type="button" class="btn btn-primary btn-block" id="gallery">Galeria</button>
             </div>
-            
+            <div class="row">
+                <div class="col-sm-12">
+                    <p id="nome"></p>
+
+                </div>
+                <div class="col-sm-12">
+                    <p id="email"></p>
+
+                </div>
+
+            </div>
         </div>
-        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
-        <script type="text/javascript" src="js/perfil.js"></script>
-    </body>
+
+        <div>
+            <input type="button" value="Perfil" id="btnPerfil">
+            <input type="button" value="Voltar" id="btnVoltar">
+
+        </div>
+
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/perfil.js"></script>
+</body>
+
 </html>
