@@ -3,6 +3,7 @@ var app = {
     // Application Constructor
     initialize: function () {
 
+        var usuario = firebase.auth().currentUser
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
 
         document.getElementById('btnVoltar').addEventListener('click', () => {
