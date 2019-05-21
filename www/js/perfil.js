@@ -1,9 +1,11 @@
 
 var app = {
+    onStart : () => { },
+    localUser: {},
     // Application Constructor
     initialize: function () {
 
-        var usuario = firebase.auth().currentUser
+       
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
 
         document.getElementById('btnVoltar').addEventListener('click', () => {
@@ -49,8 +51,23 @@ var app = {
 
                 var image = document.getElementById('fotoPerfil');
                 image.src = "data:image/jpeg;base64," + image_data;
-                var storage = window.localStorage.setItem("imgPerfil", image_data)
-                
+                window.localStorage.setItem("imgPerfil", image_data)
+
+                firebase.auth().onAuthStateChanged((user) => {
+                    user.updateProfile({
+                        displayName: "Diego",
+                        photoURL: ""
+                      }).then(function() {
+                          console.log('sucesso')
+                        // Update successful.
+                      }).catch(function(error) {
+                        console.log('fail')
+                        // An error happened.
+                      });      
+                        
+                      this.onStart();
+                     
+                });
                 
                 
             },

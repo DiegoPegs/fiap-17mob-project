@@ -20,8 +20,8 @@ var main = {
                 }
 
                 if (page.indexOf('perfil') !== -1) {
-                    document.getElementById('nome').textContent = this.localUser.displayName
-                    document.getElementById('email').textContent = this.localUser.email
+                    document.getElementById('nome').textContent = `Nome: ${this.localUser.displayName}`
+                    document.getElementById('email').textContent = `Email: ${this.localUser.email}`
                 }
                                
                 

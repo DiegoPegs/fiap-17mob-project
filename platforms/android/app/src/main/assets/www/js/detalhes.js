@@ -13,6 +13,8 @@ var app = {
         var person = JSON.parse(storage.getItem("people"))
         storage.removeItem("people")
         document.getElementById("nome").innerText = person.name
+        document.getElementById("altura").innerText = `Altura: ${person.height}`
+        document.getElementById("olhos").innerText = `Olhos: ${person.eye_color}`
         
     },
 

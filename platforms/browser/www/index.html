@@ -1,53 +1,63 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://www.gstatic.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">  
-        <title>Login</title>
-    </head>
-    <body>
-        <div class="container-fluid">
-                <br />
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col">
-                            <h1 class="col sm-12">Login</h1>
 
-                    </div>
-                    <div class="col"></div>
-                </div>
-            <br />
-                <form id="loginForm" style="text-align: center;" >
-                    <div class="form-group">
-                        <input class="form-control" type="email" id="email" placeholder="E-mail">
+<head>
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://www.gstatic.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <title>Login</title>
+</head>
 
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" type="password" id="password" placeholder="Senha">
+<body>
+    <div class="container-fluid" style="margin-top: 50px">
+        <br />
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <h1 class="col sm-12">Login</h1>
 
-                    </div>
-                    <input class="btn btn-primary btn-block" type="button" value="Entrar" id="btnEntrar">
-                    <a href="cadastro.html">Registrar</a>
-                </form>
-                
-                
-
-                        
+            </div>
+            <div class="col"></div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        
+        <br />
+        <form id="loginForm" style="text-align: center;">
+            <div class="form-group">
+                <input class="form-control" type="email" id="email" placeholder="E-mail">
+
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="password" id="password" placeholder="Senha">
+
+            </div>
+            <div class="form-group">
+                <input class="btn btn-primary form-control" type="button" value="Entrar" id="btnEntrar">
+
+            </div>
+            <div class="form-group">
+                <a class="form-control btn" href="cadastro.html">Registrar</a>
+                    
+            </div>
+        </form>
 
 
-    </body>
+
+
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+
+
+</body>
+
 </html>

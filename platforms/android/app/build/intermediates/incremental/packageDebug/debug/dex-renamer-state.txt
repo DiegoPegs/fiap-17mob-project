@@ -1,4 +1,4 @@
-#Mon May 20 18:22:45 BRT 2019
+#Mon May 20 22:42:39 BRT 2019
 base.0=/home/compila/cordova/fiap-17mob-project/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

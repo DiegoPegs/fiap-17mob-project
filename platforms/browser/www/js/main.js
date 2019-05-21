@@ -20,8 +20,14 @@ var main = {
                 }
 
                 if (page.indexOf('perfil') !== -1) {
-                    document.getElementById('nome').textContent = this.localUser.displayName
-                    document.getElementById('email').textContent = this.localUser.email
+                    var image = document.getElementById('fotoPerfil');
+                    if (this.localUser.photoUrl == "" || this.localUser.photoUrl == null) {
+                        image.src = "img/anonimo.png"
+                    }else{
+                        image.src = "data:image/jpeg;base64," + this.localUser.photoUrl;
+                    }
+                    document.getElementById('nome').textContent = `Nome: ${this.localUser.displayName}`
+                    document.getElementById('email').textContent = `Email: ${this.localUser.email}`
                 }
                                
                 

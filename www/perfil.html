@@ -14,37 +14,42 @@
 </head>
 
 <body>
-    <div class="conteiner-fluid">
-        <div class="row col s12">
-            <h1>Perfil</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" style="margin-top: 50px; text-align: center;">
+                <h1>Perfil</h1>
+            </div>
+
         </div>
         <div class="row">
-            <div class="col-sm-12">
-                <img src="#" id="fotoPerfil" class="img-thumbnail" style="width: 100%; height: auto;" />
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="#" id="fotoPerfil" class="img-thumbnail" style="width: 100%; height: auto;" />
+                    </div>
+                    <div class="col-12">
+                        <p id="nome"></p>
+                        
+                        <p id="email"></p>
+                        
+                    </div>
+                </div>
+
             </div>
-            <div class="col-sm-12">
+            <div class="col-12" style="margin-top: 10px">
                 <button type="button" class="btn btn-primary btn-block" id="camera">Câmera</button>
             </div>
 
-            <div class="col-sm-12">
+            <div class="col-12" style="margin-top: 10px">
                 <button type="button" class="btn btn-primary btn-block" id="gallery">Galeria</button>
             </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <p id="nome"></p>
 
-                </div>
-                <div class="col-sm-12">
-                    <p id="email"></p>
-
-                </div>
-
-            </div>
         </div>
 
-        <div>
-            <input type="button" value="Perfil" id="btnPerfil">
-            <input type="button" value="Voltar" id="btnVoltar">
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-12">
+                <input class="btn btn-block" type="button" value="Voltar" id="btnVoltar">
+            </div>
 
         </div>
 
